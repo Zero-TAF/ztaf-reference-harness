@@ -1,0 +1,13 @@
+[project]
+name = "ztaf-reference-harness"
+version = "0.1.0"
+description = "Zero-TAF reference decision-point: the runtime loop over the mandate and evidence substrates, with Agentic Operations adapters and a demo CLI."
+requires-python = ">=3.10"
+dependencies = ["cryptography>=42", "ztaf-mandate", "ztaf-evidence"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ztaf_harness"]

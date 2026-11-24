@@ -1,0 +1,9 @@
+{
+  "zt_profile_version": "0.1.0",
+  "agent_profile": {
+    "id": "refund-agent-42",
+    "display_name": "Refund Desk Agent 42",
+    "managed_by": "Agentic Operations",
+    "operating_model": "agentic-operations"
+  }
+}

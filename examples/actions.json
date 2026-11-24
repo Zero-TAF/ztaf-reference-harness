@@ -1,0 +1,19 @@
+{
+  "actions": [
+    {
+      "name": "small-refund (permit expected)",
+      "action": {"tool": "payments-api", "operation": "refund",
+                  "parameters": {"amount": 150, "customer": "C-0007"}}
+    },
+    {
+      "name": "large-refund (escalation expected)",
+      "action": {"tool": "payments-api", "operation": "refund",
+                  "parameters": {"amount": 350, "customer": "C-0042"}}
+    },
+    {
+      "name": "crm-lookup (no decision class - deny expected)",
+      "action": {"tool": "crm-api", "operation": "lookup",
+                  "parameters": {"customer": "C-0007"}}
+    }
+  ]
+}

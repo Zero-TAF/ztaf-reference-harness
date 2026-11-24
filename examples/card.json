@@ -1,0 +1,23 @@
+{
+  "zt_card_version": "0.1.0",
+  "agent": {
+    "id": "refund-agent-42",
+    "name": "Refund Desk Agent 42",
+    "purpose": "issue customer refunds within the payments policy"
+  },
+  "capabilities": [
+    {
+      "tool": "payments-api",
+      "operations": ["refund"],
+      "constraints": {
+        "parameter_bounds": [
+          {"field": "amount", "op": "max", "bound": 500}
+        ],
+        "escalation_above": {"field": "amount", "op": "max", "bound": 200}
+      }
+    }
+  ],
+  "constraints": {
+    "budget": {"unit": "EUR", "amount": 5000}
+  }
+}
